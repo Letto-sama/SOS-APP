@@ -1,0 +1,38 @@
+.postulate_container{
+    border: 1px solid black;
+    width: 1400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+.postulate_text{
+    margin: auto;
+}
+.postulate_text h1:first-child{
+    color: #377DFF;
+    font-weight: bold;
+    font-size: 45px;
+}
+.postulate_text h1:nth-child(2){
+    color: #001219;
+    font-weight: bold;
+    font-size: 45px;
+}
+.postulate_text p {
+    color: #677788;
+    font-size: 20px;
+}
+.postulate_text h2 {
+    color: #1e2022;
+    font-size: 16px;
+    font-weight:400
+}
+
+.postulate_text_buttons{
+    margin: 1.5em 0 2em;
+}
+
+.postulate_logos{
+    display: flex;
+    flex-direction: row;
+}

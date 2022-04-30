@@ -1,0 +1,20 @@
+.navbar_container{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    margin: 0 0 5em 0;
+}
+.navbar{
+    width: 1400px;
+    height: auto;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    border: 1px solid black;
+}
+
+.navbar > div{
+    border: 1px solid black;
+}
+.navbar_elemento1, .navbar_elemento2, .navbar_elemento3{
+    margin: auto;
+    border: 1px solid black;
+}

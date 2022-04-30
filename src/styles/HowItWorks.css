@@ -1,0 +1,16 @@
+.HIW_container{
+    border: 1px solid black;
+    width: 1400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.HIW_text h1:first-child{
+    color: #377DFF;
+    font-weight: bold;
+    font-size: 45px;
+}
+.HIW_text{
+    margin: auto;
+    text-align: center;
+}

@@ -5,17 +5,19 @@ import { auth } from '../firebase'
 
 export const authContext = createContext()
 
+//LLAMAR LOS VALORES SIN IMPORTAR USECONTEXT Y CONTEXT, SOLO NECESITO EXPORTAR USEAUTH
 export const useAuth = () => {
     const context = useContext(authContext)
-    if (!context) throw new Error('Thre is not auth provider')
+    //SI NO HAY CONTEXTO ARROJA EL ERROR CON EL SIGUIENTE MENSAJE
+    if (!context) throw new Error('There is not auth provider')
     return context
 }
 
 export function AuthProvider({ children }) {
     const [user, setUser] = useState(null)
     const [loading, setLoading] = useState(true)
-    // const user = {
-    //     login: true
+    // const user2 = {
+    //     login: false
     // };
     const signup = (email, password) => {
         return createUserWithEmailAndPassword(auth, email, password)

@@ -23,7 +23,7 @@ export function Login() {
         setError('')
         try {
             await login(user.email, user.password)
-            navigate('/')
+            navigate('/Home')
 
         } catch (error) {
             console.log(error.code)
@@ -36,9 +36,8 @@ export function Login() {
 
     const handleGoogleSignin = async () => {
         try {
-
             await loginWithGoogle()
-            navigate("/")
+            navigate("/Home")
         } catch (error) {
             setError(error.message)
         }
